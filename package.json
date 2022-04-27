@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "check-format": "prettier --check .",
-    "prepare": "husky install",
-    "typescript": "tsc --project tsconfig.json --noEmit",
-    "lint-staged": "lint-staged --config lint-staged.js"
+    "lint": "eslint .",
+    "lint-staged": "lint-staged --config lint-staged.js",
+    "prettier": "prettier --check .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
