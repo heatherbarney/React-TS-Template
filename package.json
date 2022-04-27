@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "check-format": "prettier --check .",
+    "lint": "eslint ."
+    "lint-staged": "lint-staged --config lint-staged.js"
+    "prettier": "prettier --check .",
     "prepare": "husky install",
     "typescript": "tsc --project tsconfig.json --noEmit",
-    "lint-staged": "lint-staged --config lint-staged.js"
   },
   "keywords": [],
   "author": "",
