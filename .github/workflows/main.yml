@@ -2,13 +2,7 @@ name: CampingApp CI
 on: [push, pull_request]
 jobs:
   react-app-workflow:
-<<<<<<< HEAD
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
-=======
-    runs-on: ubuntu-latest
->>>>>>> bac817892466d5ec863dda2e6d9b6837da85f366
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
