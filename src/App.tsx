@@ -1,9 +1,13 @@
 import * as React from "react";
 
-const App = function () {
+type AppProps = {
+  message: string;
+};
+
+const App = function ({ message }: AppProps) {
   return (
     <div>
-      <h1>This is my React App!</h1>
+      <h1>{message}</h1>
     </div>
   );
 };

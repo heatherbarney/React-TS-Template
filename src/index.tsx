@@ -2,4 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const message = "This is my React app! Look at me using types!!";
+
+ReactDOM.render(<App message={message} />, document.getElementById("root"));
