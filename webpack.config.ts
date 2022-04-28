@@ -35,12 +35,6 @@ const config: Configuration = {
     filename: "bundle.js",
   },
   devServer: {
-    proxy: {
-      "/api": {
-        target: "http://localhost:3000",
-        secure: false,
-      },
-    },
     client: {
       overlay: {
         errors: true,
