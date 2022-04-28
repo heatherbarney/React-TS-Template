@@ -2,8 +2,12 @@ import path from "path";
 import { Configuration } from "webpack";
 import "webpack-dev-server";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import HTMLWebpackPlugin from "html-webpack-plugin";
+
+const isDev = process.env.NODE_ENV === "development";
 
 const config: Configuration = {
+  mode: isDev ? "development" : "production",
   entry: "./src/index.tsx",
   module: {
     rules: [
@@ -31,13 +35,29 @@ const config: Configuration = {
     filename: "bundle.js",
   },
   devServer: {
-    static: path.join(__dirname, "build"),
-    compress: true,
-    port: 4000,
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        secure: false,
+      },
+    },
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+      progress: true,
+    },
+    historyApiFallback: true,
+    hot: true,
+    open: true,
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       async: false,
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/index.html",
     }),
   ],
 };

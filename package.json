@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve",
     "lint": "eslint .",
     "lint-staged": "lint-staged --config lint-staged.js",
     "prettier": "prettier --check .",
@@ -36,6 +38,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "fork-ts-checker-webpack-plugin": "^7.2.7",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
     "prettier": "2.6.2",
