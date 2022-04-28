@@ -1,8 +1,9 @@
 {
-  "name": "camping_app",
+  "name": "react-typescript-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "",
+  "license": "",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve",
@@ -11,9 +12,6 @@
     "prettier": "prettier --check .",
     "typescript": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/plugin-transform-runtime": "^7.17.0",
