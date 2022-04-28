@@ -12,7 +12,4 @@ const App = function ({ message }: AppProps) {
   );
 };
 
-const myNewVar = "var";
-console.log(myNewVar);
-
 export default App;
