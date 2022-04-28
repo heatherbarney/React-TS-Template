@@ -1,6 +1,7 @@
 import path from "path";
 import { Configuration } from "webpack";
 import "webpack-dev-server";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 const config: Configuration = {
   entry: "./src/index.tsx",
@@ -34,6 +35,11 @@ const config: Configuration = {
     compress: true,
     port: 4000,
   },
+  plugins: [
+    new ForkTsCheckerWebpackPlugin({
+      async: false,
+    }),
+  ],
 };
 
 export default config;
