@@ -1,7 +1,7 @@
 version: "3"
 services:
   dev:
-    image: 
+    image:
     container_name: dev-hot
     ports:
       - 8080:8080
