@@ -6,6 +6,7 @@ export default defineConfig({
   build: {
     // Relative to the root
     outDir: "../build",
+    emptyOutDir: true,
   },
   plugins: [
     // …
