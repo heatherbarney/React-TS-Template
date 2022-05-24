@@ -1,13 +1,15 @@
 # start FROM a base layer of node v16.15.0
 FROM node:16.15.0
 
-RUN npm install -g vite
+USER node
+
+RUN mkdir -p /home/node/app
 
 # Set up a WORKDIR for application in the container
-WORKDIR /usr/src/app
+WORKDIR /home/node/app
 
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY package*.json /usr/src/app/
+COPY package*.json /home/node/app
 
 # npm install to create node_modules in the container
 RUN npm install
