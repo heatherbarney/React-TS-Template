@@ -16,8 +16,8 @@ All branches include:
 * Commit linting with Commitlint
 * Precommit hooks with Husky and Lint-staged
 * CI workflows with Github Actions
-* Transpilation with Babel
-* Dev server with hot module reloading via Webpack
+* Dev server with hot module reloading via Vite
+* Production bundling via Vite/Rollup
 
 ## Other Branches
 
