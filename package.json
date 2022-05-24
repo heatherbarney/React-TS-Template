@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "docker-dev": "docker-compose -f docker-compose-dev-hot.yml up",
     "lint": "eslint --ignore-path .gitignore .",
     "lint-staged": "lint-staged --config lint-staged.js",
     "prettier": "prettier --check .",

@@ -1,6 +1,8 @@
 # start FROM a base layer of node v16.15.0
 FROM node:16.15.0
 
+RUN npm install -g vite
+
 # Set up a WORKDIR for application in the container
 WORKDIR /usr/src/app
 
