@@ -25,6 +25,10 @@ All branches include:
 Other branches of the project extend the main template in various ways.
 
 * docker-dev - provides a containerized development environment with hot module reloading
+    * Create a new Docker image on your Dockerhub account by running the following command in the terminal:
+    `docker build -f Dockerfile-dev -t [your dockerhub username]/react-template`
+    * In docker-compose-dev-hot.yml, append [your Dockerhub username]/react-template as the image on line 4.
+    * To spin up the container, type `npm run docker-dev` in the command line.
 
 ## Getting Started
 
@@ -35,6 +39,6 @@ To get started, simply click the green "Use this template" button on the repo's 
 Edit the rules for static testing to suit your own personal preferences.
 
 * Code formatting rules: prettierrc.json
-* Linting rules: eslintre.json
+* Linting rules: eslintrc.json
 * Type checking rules: tsconfig.json
 * Commit linting rules: commitlint.config.js
