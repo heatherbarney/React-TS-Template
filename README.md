@@ -27,7 +27,7 @@ Other branches of the project extend the main template in various ways.
 * docker-dev - provides a containerized development environment with hot module reloading
     * Create a new Docker image on your Dockerhub account by running the following command in the terminal:  
     `docker build -f Dockerfile-dev -t [your dockerhub username here]/react-template .`
-    * In docker-compose-dev-hot.yml, append [your Dockerhub username here]/react-template as the image on line 4.
+    * In docker-compose-dev-hot.yml, append `[your Dockerhub username here]/react-template` as the image on line 4.
     * To spin up the container, type `npm run docker-dev` in the command line.
 
 ## Getting Started
