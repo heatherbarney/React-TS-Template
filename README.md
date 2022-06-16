@@ -15,7 +15,7 @@ All branches include:
 * Type checking with Typescript and tsc
 * Commit linting with Commitlint
 * Precommit hooks with Husky and Lint-staged
-* Testing setup with Jest and ts-jest
+* Testing setup with Jest and React Testing Library
 * CI workflows with Github Actions
 * Dev server with hot module reloading via Vite
 * Production bundling via Vite/Rollup
