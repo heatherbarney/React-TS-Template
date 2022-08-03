@@ -28,7 +28,7 @@ Other branches of the project extend the main template in various ways.
 
 ## Getting Started
 
-To get started, simply click the green "Use this template" button on the repo's main page to create a new repo with the same files and folders. 
+To get started, simply click the green "Use this template" button on the repo's main page to create a new repo with the same files and folders. Clone the new repo, then run ```npm install``` followed by ```npm run prepare``` to enable Husky's pre-commit hooks.
 
 ## Make It Your Own!
 
